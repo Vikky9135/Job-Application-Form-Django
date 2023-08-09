@@ -14,8 +14,7 @@ def index(request):
             date = form.cleaned_data["date"]
             occupation = form.cleaned_data["occupation"]
 
-            Form.objects.create(first_name=first_name, last_name=last_name,
-                                email=email, date=date)
+            Form.objects.create(first_name=first_name, last_name=last_name,                                email=email, date=date, occupation=occupation)
             message_body = f"A new job application was submitted !!. Thank you. \n{first_name}\n {last_name}"
             email_message = EmailMessage("Form submission conformation", message_body, to=[email])
             email_message.send()
