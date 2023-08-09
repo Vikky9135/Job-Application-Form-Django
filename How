@@ -1,0 +1,10 @@
+After making changes in admin.py file...
+
+Run the server with "https://...../admin" extention
+It will ask username and pass word .
+
+To create :
+run commands in terminal as:
+ >>>  python manage.py createsuperuser
+
+ Create username and password....(password is invisible .... So just type blindly and confirm again)
